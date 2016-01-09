@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/p1"
+    
+     >
+
+    <TextView
+        android:id="@+id/sign_up_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="195dp"
+        android:text="@string/choice" />
+
+    <Button
+        android:id="@+id/sign_up_club_button"
+        android:layout_width="100.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/sign_up_choice"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/black"
+        android:text="@string/org" />
+
+    <Button
+        android:id="@+id/sign_up_person_button"
+        android:layout_width="100.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignBottom="@+id/sign_up_club_button"
+        android:layout_toRightOf="@+id/sign_up_choice"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape"
+        android:textColor="@color/black"
+        android:text="@string/personnal" />
+
+    <TextView
+        android:id="@+id/sign_up_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/sign_up_club_button"
+        android:layout_marginTop="70dp"
+        android:text="@string/already_signed_up" />
+
+    <Button
+        android:id="@+id/sign_up_denglu"
+        android:layout_width="100.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignBaseline="@id/sign_up_already"
+        android:layout_alignBottom="@id/sign_up_already"
+        android:layout_alignRight="@id/sign_up_person_button"
+        android:layout_alignLeft="@id/sign_up_person_button"
+        android:background="@drawable/shape"
+        android:textColor="@color/black"
+        android:text="@string/sign_in" />
+
+</RelativeLayout>

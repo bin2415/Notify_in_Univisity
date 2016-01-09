@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sign_up_org"
+    
+     >
+
+    <include layout="@layout/main_load" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/school_name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/sid"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/passwd"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/sign_up_per_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:ems="10" 
+        android:inputType="number">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/sign_up_per_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/sign_up_per_name"
+        android:ems="10" 
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/sign_up_per_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/sign_up_per_name"
+        android:layout_alignLeft="@+id/sign_up_club_signin"
+        android:layout_below="@+id/sign_up_per_pass"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/shape"
+        android:text="@string/sign_in" />
+
+    <Button
+        android:id="@+id/sign_up_per_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/sign_up_club_signin"
+        android:layout_alignRight="@+id/sign_up_club_signin"
+        android:layout_below="@+id/sign_up_per_signin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="@string/sign_up" />
+
+    <EditText
+        android:id="@+id/sign_up_per_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:ems="10" 
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/sign_up_club_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sign_up_per_signup"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape"
+        android:text="@string/org_sign_in" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/main">
+
+   <include layout="@layout/main_load"/>
+
+    <ImageView
+        android:id="@+id/image_face"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/sdu_icon"
+        android:src="@drawable/sdu" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:id="@+id/personal_info_text_person"
+        android:layout_toRightOf="@id/image_face"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:text="名字"
+        android:textSize="20dip"
+        android:textColor="#0080ff"
+        />
+    <Button 
+        android:id="@+id/personal_info_changeFace_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="#0080ff"
+        android:textColor="#ffffff"
+        android:text="修改头像"
+        android:layout_below="@id/personal_info_text_person"
+        android:layout_toRightOf="@id/image_face"
+        />
+
+    <Button
+        android:id="@+id/personnal_info_activity_par_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/image_face"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/transparent"
+        android:text="我参与的活动" />
+
+    <Button
+        android:id="@+id/personnal_info_my_activity_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@color/transparent"
+        android:layout_below="@+id/personnal_info_activity_par_button"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/personnal_info_activity_par_button"
+        android:layout_alignRight="@id/personnal_info_activity_par_button"
+        android:layout_marginTop="17dp"
+        android:text="@string/my_activity_org" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_above="@+id/personnal_info_linear"
+        android:text="退出登录" />
+    
+    <LinearLayout
+        android:id="@+id/personnal_info_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <include layout="@layout/main_tab"/>
+    </LinearLayout>
+
+</RelativeLayout>

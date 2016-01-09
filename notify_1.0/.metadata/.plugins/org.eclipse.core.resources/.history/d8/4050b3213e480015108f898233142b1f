@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_annou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_homepage"
+        android:layout_alignBottom="@+id/button_homepage"
+        android:layout_toRightOf="@+id/button_homepage"
+        android:text="@string/public_annou" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_annou"
+        android:text="@string/search" />
+
+    <Button
+        android:id="@+id/button_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_search"
+        android:text="@string/about_me" />
+
+    <Button
+        android:id="@+id/button_homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42dp"
+        android:text="@string/home_page" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_homepage"
+        android:layout_marginTop="39dp"
+        android:contentDescription="@string/sdu_icon"
+        android:src="@drawable/SDU" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_annou"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="70dp"
+        android:text="@string/my_activity_par" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_annou"
+        android:layout_alignLeft="@+id/button_annou"
+        android:layout_marginBottom="28dp"
+        android:text="@string/my_activity_follow" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/my_activity_org" />
+
+</RelativeLayout>

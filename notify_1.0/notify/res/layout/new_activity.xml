@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main" >
+   <include layout="@layout/main_load"/>
+    <TextView
+        android:id="@+id/new_activity_text_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/new_activity_image_add"
+        android:layout_below="@+id/new_activity_image_add"
+        android:text="@string/add_picture" />
+
+   <EditText
+        android:id="@+id/new_activity_editText"
+        android:layout_width="285dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
+        android:ems="10" 
+        android:inputType="textMultiLine"
+        android:hint="@string/advert">
+        <requestFocus />
+        </EditText>
+
+    <ImageView
+        android:id="@+id/new_activity_image_add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/plus" 
+        android:contentDescription="@string/add_pic"/>
+
+    <Button
+        android:id="@+id/new_activity_button_submit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="265dp"
+         android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:text="@string/deliver" />
+    
+    <ImageView 
+        android:id="@+id/new_activity_image_picture"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/new_activity_text_add"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <include layout="@layout/main_tab"/>
+    </LinearLayout>
+	
+</RelativeLayout>

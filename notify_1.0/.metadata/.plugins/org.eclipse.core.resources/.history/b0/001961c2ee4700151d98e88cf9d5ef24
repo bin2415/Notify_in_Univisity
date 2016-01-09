@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">notify</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="judgement">评论</string>
+    <string name="join_in">参加</string>
+    <string name="home_page">主页</string>
+    <string name="public_annou">发布</string>
+    <string name="search">搜索</string>
+    <string name="about_me">我</string>
+    <string name="sdu_icon">SDU</string>
+    <string name="text">7月27日，山东大学合作建设的新加坡南洋理工大学孔子学院举办
+        成立十周年庆典活动。山东大学校长张荣在活动前专门致贺信，祝贺孔子学院成立十周年，
+        常务副校长王琪珑应邀率团出席活动。
+ 　　张荣在贺信中说，山东大学和南洋理工大学十年前扣准脉搏，把握先机，
+ 合力使得南洋理工大学孔子学院成为全球最早成立的孔子学院之一，
+ 希望两校在下一个十年同心协力，让孔子学院为促进双方超越时空、跨越国界的友好交流再作贡献。
+ 庆典上，新加坡教育部长王瑞杰、南洋理工大学校长Bertil Anderson、
+ 南洋理工大学孔子学院理事长陈金樑等新方代表分别发言，他们表示，
+ 孔子学院不仅借助两校优势资源实现了学术研究和教育功能，也让新加坡民众得以深入了解中国语言、
+ 文化，促进了不同文化的融合，进一步实现了其社会功能，希望两校进一步密切合作，
+ 充分依托孔子学院平台，孵化中新两国之间的教育、文化交流合作项目。
+ 中国驻新加坡大使馆教育参赞郁云峰代表中方发言，
+ 表示南洋理工大学和山东大学为孔子学院的发展提供了强大的学术支撑和文化支撑，
+ 希望两校加强合作，成为两国高校合作交流的典范，也希望孔子学院在中新教育、
+ 人文交流领域进一步发挥领袖作用，打造孔子学院品牌。
+ 中新两国政界、教育界、商界知名人士及合作方代表200余人参加了庆典。</string>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="200dp" android:focusable="false"
+	android:background="@color/transparent">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4.0dip"
+            android:padding="20.0dip" >
+            <ImageView
+                android:id="@+id/tpl_list_activities_face"
+                android:layout_width="55.0dip"
+                android:layout_height="55.0dip"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="头像"
+                android:scaleType="centerInside"
+                android:src="@drawable/face"
+                />
+
+            <TextView
+                android:id="@+id/tpl_list_activities_person"
+                android:layout_width="wrap_content"
+                android:layout_height="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@id/tpl_list_activities_face"
+                android:text="组织者"
+                android:textColor="#0080ff"
+                android:textSize="12dip" />
+            <TextView
+                android:id="@+id/tpl_list_activities_uptime"
+                android:layout_width="wrap_content"
+                android:layout_height="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop ="2dip"
+                android:layout_toRightOf="@id/tpl_list_activities_face"
+                android:layout_below ="@id/tpl_list_activities_person"
+                android:text="更新时间"
+                android:textColor="#808080"
+                android:textSize="8dip"
+                />
+
+        </RelativeLayout>
+
+            
+            <TextView
+                android:id="@+id/tpl_list_activities_text_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:minLines="2"
+                android:textIsSelectable="false"
+                android:textSize="18dip" />
+        
+    </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/shape"
+       android:orientation="horizontal" >
+
+       <Button
+           android:id="@+id/tpl_list_activities_comment"
+           android:layout_width="80dip"
+           android:layout_height="40dp"
+           android:layout_alignParentTop="true"
+           android:layout_marginBottom="35dp"
+           android:layout_marginLeft="25dip"
+           android:background="@color/black"
+           android:clickable="false"
+           android:focusable="false"
+           android:focusableInTouchMode="false"
+           android:text="评论"
+           android:textColor="@color/black" />
+
+       <Button
+           android:id="@+id/tpl_list_activities_part"
+           android:layout_width="80dip"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:layout_marginBottom="35dp"
+           android:layout_marginRight="25dip"
+           android:background="@drawable/shape"
+           android:clickable="false"
+           android:focusable="false"
+           android:focusableInTouchMode="false"
+           android:text="参与"
+           android:textColor="@color/black" />
+   </RelativeLayout>
+
+</LinearLayout>

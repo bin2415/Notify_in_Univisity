@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/main"
+	>
+	<include layout="@layout/main_load"/>
+	 <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="4.0dip"
+            android:padding="20.0dip" >
+            <ImageView
+                android:id="@+id/tpl_list_activity_face"
+                android:layout_width="55.0dip"
+                android:layout_height="55.0dip"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="头像"
+                android:scaleType="centerInside"
+                android:src="@drawable/face"
+                />
+
+            <TextView
+                android:id="@+id/tpl_list_activity_person"
+                android:layout_width="wrap_content"
+                android:layout_height="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@id/tpl_list_activity_face"
+                android:text="组织者"
+                android:textColor="#0080ff"
+                android:textSize="12dip" />
+            <TextView
+                android:id="@+id/tpl_list_activity_uptime"
+                android:layout_width="wrap_content"
+                android:layout_height="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop ="2dip"
+                android:layout_toRightOf="@id/tpl_list_activity_face"
+                android:layout_below ="@id/tpl_list_activity_person"
+                android:text="更新时间"
+                android:textColor="#808080"
+                android:textSize="8dip"
+                />
+
+        </RelativeLayout>
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:paddingLeft="5dip" 
+		android:paddingRight="5dip" 
+		android:focusable="false"
+		android:background="@drawable/xml_list_bg">
+		    <ImageView 
+		        android:id = "@+id/tpl_list_activity_item_image"
+		        android:layout_width = "match_parent"
+		        android:layout_height = "72.0dip"
+		        android:contentDescription = "@string/app_name"
+		        android:scaleType= "centerInside"
+		        android:src="@drawable/icon_null"
+		        />
+			<TextView 
+				android:id="@+id/tpl_list_activity_text_content"
+				android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:textSize = "18.0sp"
+                android:textIsSelectable="false"/>
+		
+	</LinearLayout>
+
+	<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="40dip"
+		    android:layout_marginTop="30dip"	   
+		    >
+		    <Button 
+		        android:id="@+id/tpl_list_activity_comment"
+		        android:layout_width="80dip"
+		        android:layout_height="40dip"
+		        android:layout_marginLeft="25dip"
+		        android:background="@drawable/shape"
+		        android:text="评论"
+		        android:textColor="#ffffff"
+		        />
+		    <Button
+		        android:id="@+id/tpl_list_activity_part"
+		        android:layout_width="80dip"
+		        android:layout_height="40dip"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="25dip"
+		        android:background="@drawable/shape"
+		        android:text="参与"
+		        android:textColor="#ffffff" />
+		</RelativeLayout>
+		
+	<ListView
+	    android:id="@+id/tpl_list_activity_list_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dip"
+	    android:cacheColorHint="#00000000"
+	    android:descendantFocusability="blocksDescendants"
+	    android:divider="#004080"
+	    android:fadingEdge="vertical"
+	    android:fadingEdgeLength="5dip"
+	    android:listSelector="@drawable/xml_list_bg" >
+	</ListView>
+	
+	
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical" android:layout_margin="10dip">
+    <TextView android:id="@+id/cs_main_dialog_text" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#FFFFFF" android:text="test" android:gravity="center" android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/cs_main_dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:text="确定" />
+    
+</LinearLayout>

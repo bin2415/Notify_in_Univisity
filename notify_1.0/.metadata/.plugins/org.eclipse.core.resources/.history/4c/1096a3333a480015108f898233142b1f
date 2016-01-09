@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">notify</string>
+    <string name="action_settings">Settings</string>
+    <string name="judgement">评论</string>
+    <string name="join_in">参加</string>
+    <string name="home_page">主页</string>
+    <string name="public_annou">发布</string>
+    <string name="search">搜索</string>
+    <string name="about_me">我</string>
+    <string name="sdu_icon">SDU</string>
+    <string name="text">7月27日，山东大学合作建设的新加坡南洋理工大学孔子学院举办
+           成立十周年庆典活动。山东大学校长张荣在活动前专门致贺信，祝贺孔子学院成立十周年，
+           常务副校长王琪珑应邀率团出席活动。
+ 　　 张荣在贺信中说，山东大学和南洋理工大学十年前扣准脉搏，把握先机，
+            合力使得南洋理工大学孔子学院成为全球最早成立的孔子学院之一，
+            希望两校在下一个十年同心协力，让孔子学院为促进双方超越时空、跨越国界的友好交流再作贡献。
+            庆典上，新加坡教育部长王瑞杰、南洋理工大学校长Bertil Anderson、
+            南洋理工大学孔子学院理事长陈金樑等新方代表分别发言，</string>
+     <string name="sdu_name">SDU</string>
+     <string name="public">发表</string>
+     <string name="say_something">说点什么吧</string>
+     <string name="yes_descrip">成功参与的图标</string>
+     <string name="share">分享给小伙伴</string>
+     <string name="contact">联系负责人</string>
+     
+     
+     
+
+</resources>

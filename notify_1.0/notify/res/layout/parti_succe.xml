@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main" 
+    >
+	
+     <include layout="@layout/main_load"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/yes" 
+        android:contentDescription="@string/yes_pic"/>
+    <TextView 
+        android:id="@+id/parti_succe_text_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:textColor = "#0080ff"
+        android:text="参与者"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/textView1"
+        />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image_phone"
+        android:layout_centerVertical="true"
+        android:text="@string/contact" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignRight="@+id/image_share"
+        android:text="@string/share" />
+
+    <ImageView
+        android:id="@+id/image_share"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/textView1"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="70dp"
+        android:contentDescription="@string/share_pic"
+        android:src="@drawable/share" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="46dp"
+        android:text="@string/participant" />
+
+    <ImageView
+        android:id="@+id/image_phone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/image_share"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/contact_pic"
+        android:src="@drawable/phone" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dip"
+    android:background="@drawable/main"
+    >
+        <TextView 
+            android:id="@+id/tpl_list_comment_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0080ff"
+            android:textSize="15dip"
+            android:text="同学甲"
+            />
+        <TextView 
+            android:id="@+id/tpl_list_comment_uptime"
+            android:layout_toRightOf="@id/tpl_list_comment_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="10dip"
+            android:textColor="#808080"
+            android:textSize="10dip"
+            android:text="10小时前"
+            />
+    <TextView
+        android:id="@+id/tpl_list_comment_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_below="@id/tpl_list_comment_person"
+        android:textSize="15dip"
+        android:text="asdfasdfasdf"
+        android:background="#c0c0c0"
+        ></TextView>
+
+</RelativeLayout>

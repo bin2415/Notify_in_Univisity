@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/transparent"
+     >
+     
+    <ImageButton 
+        android:id="@+id/main_tab_activities_club"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_zhuye1"
+        android:background="@drawable/xml_main_tab_bg"
+        />
+    <ImageButton 
+        android:id="@+id/main_tab_activities_per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/icon_huodong1"
+        android:background="@drawable/xml_main_tab_bg"
+        />
+	<ImageButton 
+	    android:id="@+id/main_tab_add"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:src="@drawable/icon_add1"
+	    android:background="@drawable/xml_main_tab_bg"
+	    />
+	<ImageButton
+	    android:id="@+id/main_tab_person"
+	    android:layout_width="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/icon_person1"
+	    android:background="@drawable/xml_main_tab_bg"
+	    />
+</LinearLayout>

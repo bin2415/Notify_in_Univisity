@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main" >
+
+    <include layout="@layout/main_load"/>
+
+    <TextView
+        android:id="@+id/sign_up_success_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@+id/sign_up_succ_image"
+        android:layout_marginTop="17dp"
+        android:text="@string/sign_up_succ" />
+
+    <Button
+        android:id="@+id/sign_up_succ_enter"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/shape"
+        android:text="@string/enter" />
+
+    <ImageView
+        android:id="@+id/sign_up_succ_image"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/yes_pic"
+        android:src="@drawable/yes" />
+
+</RelativeLayout>
